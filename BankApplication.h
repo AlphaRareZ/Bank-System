@@ -2,18 +2,21 @@
 #define BANKAPPLICATION_H
 
 #include<bits/stdc++.h>
-
 #include "Client.h"
-
+#include "BankAccount.h"
+#include "SavingsBankAccount.h"
 using namespace std;
-
+class BankAccount;
+class SavingsAccount;
+class Client;
 class BankApplication {
 private:
     static vector<string> name;
-    vector<string> address;
-    vector<string> phone;
-    vector<string> type;
-    vector<string> balance;
+    static vector<string> address;
+    static vector<string> phone;
+    static vector<string> type;
+    static vector<string> balance;
+    static vector<string> ID;
 public:
     BankApplication();
 

@@ -134,5 +134,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Bank_System.dir/DependInfo.cmake"
+  "CMakeFiles/New_folder.dir/DependInfo.cmake"
   )

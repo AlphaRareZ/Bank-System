@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mohamed alaa/Desktop/New folder/BankAccount.cpp
+utility
+-
+classes.h
+C:/Users/mohamed alaa/Desktop/New folder/classes.h
+
+C:/Users/mohamed alaa/Desktop/New folder/BankApplication.cpp
+classes.h
+C:/Users/mohamed alaa/Desktop/New folder/classes.h
+
+C:/Users/mohamed alaa/Desktop/New folder/Client.cpp
+classes.h
+C:/Users/mohamed alaa/Desktop/New folder/classes.h
+
+C:/Users/mohamed alaa/Desktop/New folder/SavingsBankAccount.cpp
+utility
+-
+classes.h
+C:/Users/mohamed alaa/Desktop/New folder/classes.h
+
+C:/Users/mohamed alaa/Desktop/New folder/classes.h
+bits/stdc++.h
+C:/Users/mohamed alaa/Desktop/New folder/bits/stdc++.h
+
+C:/Users/mohamed alaa/Desktop/New folder/main.cpp
+bits/stdc++.h
+-
+classes.h
+C:/Users/mohamed alaa/Desktop/New folder/classes.h
+BankApplication.cpp
+C:/Users/mohamed alaa/Desktop/New folder/BankApplication.cpp
+BankAccount.cpp
+C:/Users/mohamed alaa/Desktop/New folder/BankAccount.cpp
+Client.cpp
+C:/Users/mohamed alaa/Desktop/New folder/Client.cpp
+SavingsBankAccount.cpp
+C:/Users/mohamed alaa/Desktop/New folder/SavingsBankAccount.cpp
+

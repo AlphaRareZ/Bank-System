@@ -1,9 +1,15 @@
 #include <bits/stdc++.h>
-using namespace std;
-#include "BankApplication.h"
+#include "classes.h"
 #include "BankApplication.cpp"
+#include "BankAccount.cpp"
+#include "Client.cpp"
+#include "SavingsBankAccount.cpp"
+
+using namespace std;
+
 int main() {
-    while(true){
+    while (true) {
+//        BankApplication::updateData();
         cout << "Welcome to FCAI Banking Application \n"
                 "1. Create a New Account \n"
                 "2. List Clients and Accounts \n"
@@ -13,13 +19,20 @@ int main() {
         int choice;
         cin >> choice;
         if (choice == 1) {
-            cout<<endl;
-            BankApplication troll;
-            troll.addClient();
+            cout << endl;
+            BankApplication::addClient();
         }
         if (choice == 2) {
+            cout<<endl;
             BankApplication::listClientsAndAccounts();
         }
+        if (choice == 3) {
+            cout<<endl;
+            BankApplication::withdrawMoney();
+        }
+        if (choice == 4) {
+            cout<<endl;
+            BankApplication::depositMoney();
+        }
     }
-
 }
