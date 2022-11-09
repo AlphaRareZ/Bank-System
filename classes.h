@@ -34,6 +34,11 @@ public:
 
     static void depositMoney();
 
+    // update data functions
+    static void updateVectors();
+    static void updateDatabase();
+    ~BankApplication();
+
 };
 
 class Client {

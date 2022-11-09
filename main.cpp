@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
     while (true) {
-//        BankApplication::updateData();
+        BankApplication::updateVectors();
         cout << "Welcome to FCAI Banking Application \n"
                 "1. Create a New Account \n"
                 "2. List Clients and Accounts \n"
@@ -34,5 +34,6 @@ int main() {
             cout<<endl;
             BankApplication::depositMoney();
         }
+        BankApplication::updateDatabase();
     }
 }

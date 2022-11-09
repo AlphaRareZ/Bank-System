@@ -7,8 +7,10 @@ vector<string> BankApplication::type;
 vector<string> BankApplication::balance;
 vector<string> BankApplication::ID;
 
+// constructor
 BankApplication::BankApplication() = default;
 
+// functions
 void BankApplication::addClient() {
     string cName, cAddress, cPhone, cType, cBalance;
     // Client Name Insertion
@@ -120,3 +122,56 @@ void BankApplication::depositMoney() {
     if (!found)
         cout << "USER NOT FOUND !" << endl;
 }
+
+// update data functions
+void BankApplication::updateVectors() {
+    if (name.empty()) {
+        ifstream names("names.txt");
+        ifstream addresses("addresses.txt");
+        ifstream phones("phones.txt");
+        ifstream types("types.txt");
+        ifstream balances("balances.txt");
+        ifstream IDs("IDs.txt");
+        cin.ignore();
+        string temp;
+        while (getline(names, temp)) {
+            name.push_back(temp);
+        }
+        while (getline(addresses, temp)) {
+            address.push_back(temp);
+        }
+        while (getline(phones, temp)) {
+            phone.push_back(temp);
+        }
+        while (getline(types, temp)) {
+            type.push_back(temp);
+        }
+        while (getline(balances, temp)) {
+            balance.push_back(temp);
+        }
+        while (getline(IDs, temp)) {
+            ID.push_back(temp);
+        }
+    }
+}
+
+void BankApplication::updateDatabase() {
+    ofstream names("names.txt");
+    ofstream addresses("addresses.txt");
+    ofstream phones("phones.txt");
+    ofstream types("types.txt");
+    ofstream balances("balances.txt");
+    ofstream IDs("IDs.txt");
+    for(int i = 0;i<name.size();i++){
+        names<<name[i]<<endl;
+        addresses<<address[i]<<endl;
+        phones<<phone[i]<<endl;
+        types<<type[i]<<endl;
+        balances<<balance[i]<<endl;
+        IDs<<ID[i]<<endl;
+    }
+}
+
+// destructor
+BankApplication::~BankApplication() = default;
+
