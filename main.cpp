@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "classes.h"
+#include "AllClasses.h"
 #include "BankApplication.cpp"
 #include "BankAccount.cpp"
 #include "Client.cpp"

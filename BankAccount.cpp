@@ -1,7 +1,27 @@
 #include <utility>
+#include "AllClasses.h"
 
-#include "classes.h"
+// constructor
+BankAccount::BankAccount() {
+    pClient = new Client;
+    this->balance = 0;
+    this->ID = "";
+}
 
+// setters and getters
+void BankAccount::setID(string id) {
+    this->ID = std::move(id);
+}
+
+void BankAccount::setBalance(long long int bankBalance) {
+    this->balance = (bankBalance);
+}
+
+long long BankAccount::getBalance() const {
+    return balance;
+}
+
+// withdraw and deposit functions
 void BankAccount::withdraw() {
     int amount;
     cout << "Account ID:" << ID << endl;
@@ -18,28 +38,6 @@ void BankAccount::withdraw() {
     cout << "Thank You." << endl;
     cout << "Account ID:" << ID << endl;
     cout << "New Balance:" << balance << endl;
-}
-
-void BankAccount::setID(string id) {
-    this->ID = std::move(id);
-}
-
-void BankAccount::setBalance(long long int bankBalance) {
-    this->balance = (bankBalance);
-}
-
-string BankAccount::getID() {
-    return ID;
-}
-
-long long BankAccount::getBalance() const {
-    return balance;
-}
-
-BankAccount::BankAccount() {
-    pClient = new Client;
-    this->balance = 0;
-    this->ID = "";
 }
 
 void BankAccount::deposit() {
@@ -59,3 +57,6 @@ void BankAccount::deposit() {
     cout << "Account ID:" << ID << endl;
     cout << "New Balance:" << balance << endl;
 }
+
+// destructor
+BankAccount::~BankAccount() = default;

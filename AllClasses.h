@@ -36,7 +36,10 @@ public:
 
     // update data functions
     static void updateVectors();
+
     static void updateDatabase();
+
+    // destructor
     ~BankApplication();
 
 };
@@ -50,8 +53,10 @@ private:
     SavingsAccount *pSavingsAccount{};
 
 public:
+    //constructor
     Client();
 
+    // setters and getters
     void setType(string &type);
 
     void setID(string &id);
@@ -60,14 +65,19 @@ public:
 
     string getType();
 
-    string getID();
+    long long getBalance() const;
 
+    // withdraw and deposit functions
     void basicWithdrawal();
+
     void basicDeposit();
 
     void savingsWithdrawal();
+
     void savingsDeposit();
-    long long getBalance() const;
+
+    // destructor
+    ~Client();
 
 };
 
@@ -77,19 +87,23 @@ private:
     long long balance;
     Client *pClient{};
 public:
+    // constructor
     BankAccount();
 
-    void withdraw();
-
-    void deposit();
-
+    // setters and getters
     void setID(string id);
 
     void setBalance(long long bankBalance);
 
-    string getID();
-
     long long getBalance() const;
+
+    // withdraw and deposit functions
+    void withdraw();
+
+    void deposit();
+
+    // destructor
+    ~BankAccount();
 
 };
 
@@ -99,19 +113,23 @@ private:
     long long balance{};
     Client *pClient{};
 public:
+    // constructor
     SavingsAccount();
 
+    // deposit and withdraw functions
     void withdraw();
 
     void deposit();
 
+    //setters and getters
     void setID(string id);
 
     void setBalance(long long balance);
 
-    string getID();
-
     long long getBalance();
+
+    // destructor
+    ~SavingsAccount();
 };
 
 #endif

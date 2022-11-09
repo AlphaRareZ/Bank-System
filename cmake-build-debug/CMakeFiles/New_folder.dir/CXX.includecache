@@ -6,41 +6,41 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/mohamed alaa/Desktop/New folder/BankAccount.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/AllClasses.h
+bits/stdc++.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/bits/stdc++.h
+
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/BankAccount.cpp
 utility
 -
-classes.h
-C:/Users/mohamed alaa/Desktop/New folder/classes.h
+AllClasses.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/AllClasses.h
 
-C:/Users/mohamed alaa/Desktop/New folder/BankApplication.cpp
-classes.h
-C:/Users/mohamed alaa/Desktop/New folder/classes.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/BankApplication.cpp
+AllClasses.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/AllClasses.h
 
-C:/Users/mohamed alaa/Desktop/New folder/Client.cpp
-classes.h
-C:/Users/mohamed alaa/Desktop/New folder/classes.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/Client.cpp
+AllClasses.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/AllClasses.h
 
-C:/Users/mohamed alaa/Desktop/New folder/SavingsBankAccount.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/SavingsBankAccount.cpp
 utility
 -
-classes.h
-C:/Users/mohamed alaa/Desktop/New folder/classes.h
+AllClasses.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/AllClasses.h
 
-C:/Users/mohamed alaa/Desktop/New folder/classes.h
-bits/stdc++.h
-C:/Users/mohamed alaa/Desktop/New folder/bits/stdc++.h
-
-C:/Users/mohamed alaa/Desktop/New folder/main.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/main.cpp
 bits/stdc++.h
 -
-classes.h
-C:/Users/mohamed alaa/Desktop/New folder/classes.h
+AllClasses.h
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/AllClasses.h
 BankApplication.cpp
-C:/Users/mohamed alaa/Desktop/New folder/BankApplication.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/BankApplication.cpp
 BankAccount.cpp
-C:/Users/mohamed alaa/Desktop/New folder/BankAccount.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/BankAccount.cpp
 Client.cpp
-C:/Users/mohamed alaa/Desktop/New folder/Client.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/Client.cpp
 SavingsBankAccount.cpp
-C:/Users/mohamed alaa/Desktop/New folder/SavingsBankAccount.cpp
+C:/Users/mohamed alaa/Desktop/GitHub/Bank System/SavingsBankAccount.cpp
 

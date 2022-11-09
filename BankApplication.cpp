@@ -1,4 +1,4 @@
-#include "classes.h"
+#include "AllClasses.h"
 
 vector<string> BankApplication::name;
 vector<string> BankApplication::address;
@@ -162,13 +162,13 @@ void BankApplication::updateDatabase() {
     ofstream types("types.txt");
     ofstream balances("balances.txt");
     ofstream IDs("IDs.txt");
-    for(int i = 0;i<name.size();i++){
-        names<<name[i]<<endl;
-        addresses<<address[i]<<endl;
-        phones<<phone[i]<<endl;
-        types<<type[i]<<endl;
-        balances<<balance[i]<<endl;
-        IDs<<ID[i]<<endl;
+    for (int i = 0; i < name.size(); i++) {
+        names << name[i] << endl;
+        addresses << address[i] << endl;
+        phones << phone[i] << endl;
+        types << type[i] << endl;
+        balances << balance[i] << endl;
+        IDs << ID[i] << endl;
     }
 }
 
