@@ -34,6 +34,23 @@ void BankApplication::addClient() {
     // Client Phone Insertion
     cout << "Please Enter Client Phone =======>";
     getline(cin, cPhone);
+    bool valid = false;
+    while (!valid) {
+        if (cPhone.size() == 11 and cPhone[0] == '0' and cPhone[1] == '1') {
+            for (auto i: cPhone) {
+                if (isdigit(i))
+                    valid = true;
+                else {
+                    valid = false;
+                    break;
+                }
+            }
+        }
+        if (!valid) {
+            cout << "\nPlease Enter Valid Phone Number:";
+            getline(cin, cPhone);
+        }
+    }
     phone.push_back(cPhone);
     cout << endl;
 

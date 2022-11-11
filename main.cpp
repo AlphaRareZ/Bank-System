@@ -35,5 +35,8 @@ int main() {
             BankApplication::depositMoney();
         }
         BankApplication::updateDatabase();
+        system("PAUSE");
+        system("CLS");
+        cout<<flush;
     }
 }
